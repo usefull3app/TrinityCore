@@ -1,0 +1,12 @@
+[Unit]
+Description=worldserver
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/ws.sh
+Restart=always
+RestartSec=5
+StartLimitInterval=0
+
+[Install]
+WantedBy=multi-user.target
