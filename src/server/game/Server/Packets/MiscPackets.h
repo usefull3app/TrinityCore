@@ -142,7 +142,7 @@ namespace WorldPackets
 
             ObjectGuid SourceObjectGUID;
             uint32 SoundKitID = 0;
-            
+
         };
 
         class TC_GAME_API PlaySound final : public ServerPacket
@@ -198,6 +198,16 @@ namespace WorldPackets
             int32 AreaLightID = 0;
             int32 TransitionMilliseconds = 0;
             int32 OverrideLightID = 0;
+        };
+
+        class UITime final : public ServerPacket
+        {
+        public:
+            UITime() : ServerPacket(SMSG_WORLD_STATE_UI_TIMER_UPDATE, 4) { }
+
+            WorldPacket const* Write() override;
+
+            uint32 Time = 0;
         };
 
         class WorldTeleport final : public ClientPacket
