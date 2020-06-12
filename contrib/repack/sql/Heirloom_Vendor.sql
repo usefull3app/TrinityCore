@@ -11,7 +11,6 @@ REPLACE INTO `creature_template` (entry,modelid1,name,subname,minlevel,maxlevel,
 (@ENTRY,1460,@NAME,@SUBNAME,80,80,35,0.1,128);
 
 REPLACE INTO `npc_vendor` (`entry`,`slot`,`item`,`maxcount`,`incrtime`,`extendedcost`) VALUES
- (@ENTRY, '0', '13335', '0', '0', @PRICE_100),
  (@ENTRY, '0', '4500', '0', '0', @PRICE_100),
  (@ENTRY, '0', '5178', '0', '0', @PRICE_50),
  (@ENTRY, '0', '5175', '0', '0', @PRICE_50),

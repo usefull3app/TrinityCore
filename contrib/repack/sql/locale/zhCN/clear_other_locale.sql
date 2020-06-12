@@ -1,4 +1,3 @@
-delete from quest_greeting_locale where locale <> 'zhCN';
 delete from quest_template_locale where locale <> 'zhCN';
 delete from item_set_names_locale where locale <> 'zhCN';
 delete from item_template_locale where locale <> 'zhCN';

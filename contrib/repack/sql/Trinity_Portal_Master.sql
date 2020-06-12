@@ -54,9 +54,7 @@ INSERT INTO gossip_menu (menuid, textid) VALUES
 (@GOSSIP_MENU, @TEXT_ID);
 
 -- Gossip header texts
-
-INSERT INTO npc_text (ID, text0_0, Emote0_1) VALUES
-(@TEXT_ID+4, "$B你要去哪儿?$B", 0),
+INSERT INTO npc_text (ID, text0_0, em0_1) VALUES(@TEXT_ID+4, "$B你要去哪儿?$B", 0),
 (@TEXT_ID+3, "$B请谨慎选择副本.$B", 0),
 (@TEXT_ID+2, "$B去探索一下地下城吗?$B", 0),
 (@TEXT_ID+1, "$B 为了联盟!$B", 6),
@@ -374,7 +372,7 @@ INSERT INTO gossip_menu_option (menuid, optionid, optionicon, optiontext, option
 (@GOSSIP_MENU+8, 2, 2, "龙骨荒野", 1, 1, 0, 0, 0, 0, "你确定要去龙骨荒野吗?"),
 (@GOSSIP_MENU+8, 3, 2, "灰熊丘陵", 1, 1, 0, 0, 0, 0, "你确定要去灰熊丘陵吗?"),
 (@GOSSIP_MENU+8, 4, 2, "祖尔德拉克", 1, 1, 0, 0, 0, 0, "你确定要去祖尔德拉克吗?"),
-(@GOSSIP_MENU+8, 5, 2, "肖拉查盆地", 1, 1, 0, 0, 0, 0, "你确定要去肖拉查盆地吗?"),
+(@GOSSIP_MENU+8, 5, 2, "索拉查盆地", 1, 1, 0, 0, 0, 0, "你确定要去索拉查盆地吗?"),
 (@GOSSIP_MENU+8, 6, 2, "晶歌森林", 1, 1, 0, 0, 0, 0, "你确定要去晶歌森林吗?"),
 (@GOSSIP_MENU+8, 7, 2, "风暴之巅", 1, 1, 0, 0, 0, 0, "你确定要去风暴之巅吗?"),
 (@GOSSIP_MENU+8, 8, 2, "冰冠城塞", 1, 1, 0, 0, 0, 0, "你确定要去冰冠城塞吗?"),
